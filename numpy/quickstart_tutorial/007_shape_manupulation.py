@@ -44,3 +44,14 @@ print 'vstack with new: ', numpy.vstack((d[:, numpy.newaxis], e[:, numpy.newaxis
 print numpy.r_[1: 4, 0, 4]
 # 列拓展
 print numpy.c_[1, 4, 5, 7]
+
+#
+# splitting one array into sereral smaller ones
+#
+f = numpy.floor(10 * numpy.random.random((2, 12)))
+
+# split into 3 arrays
+print numpy.hsplit(a, 3)
+
+# split after third and fourth column
+print numpy.hsplit(a, (3, 4))
